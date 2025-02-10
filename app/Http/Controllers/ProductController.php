@@ -67,7 +67,7 @@ class ProductController extends Controller
             'name' => 'sometimes|required|string|max:255',
             'price' => 'sometimes|required|numeric',
             'stock' => 'sometimes|required|integer',
-            'description' => 'sometimes|nullable|string' // Tambahkan 'description'
+            'description' => 'sometimes|nullable|string'
         ]);
     
         $product->update($request->all());
